@@ -83,9 +83,10 @@ function PhotoCard({ src, index }: { src: string; index: number }) {
               />
               <button
                 onClick={() => setLightbox(false)}
-                className="absolute -top-10 right-0 text-white/60 hover:text-white text-sm tracking-widest uppercase transition-colors"
+                aria-label="Close"
+                className="absolute top-2 right-2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-black/60 text-white/70 hover:text-white hover:bg-black/80 transition-colors text-lg"
               >
-                Close ✕
+                ✕
               </button>
             </motion.div>
           </motion.div>

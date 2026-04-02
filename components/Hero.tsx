@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
-const PARTICLES = Array.from({ length: 40 }, (_, i) => ({
+const PARTICLES = Array.from({ length: 20 }, (_, i) => ({
   id: i,
   x: Math.random() * 100,
   y: Math.random() * 100,
@@ -103,12 +103,12 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-7xl sm:text-8xl md:text-9xl font-light leading-none mb-4"
+          className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-light leading-none mb-4"
           style={{ fontFamily: "var(--font-playfair)" }}
         >
           <span className="block text-[#f5f0eb]">Jennifer</span>
           <span
-            className="block text-amber-300/40 text-4xl sm:text-5xl my-3"
+            className="block text-amber-300/40 text-2xl sm:text-4xl my-3"
             style={{ letterSpacing: "0.2em" }}
           >
             &amp;
